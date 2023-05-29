@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { CategoryComponent } from './components/category/category.component';
+import { OverviewComponent } from './components/overview/overview.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -10,15 +12,23 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       {
-        path: 'category',
-        component: CategoryComponent 
+        path: '',
+        component: OverviewComponent,
       },
       {
         path: 'about',
         component: AboutComponent
+      },
+      {
+        path: 'category',
+        component: CategoryComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
       }
     ]
-  }
+  },
 ];
 
 @NgModule({

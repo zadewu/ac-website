@@ -1,0 +1,33 @@
+nav {
+    color: white;
+    .footer-item-header {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .footer-item-content {
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            li {
+                padding: 5px 0;
+            }
+        }
+        font-size: 0.9rem;
+        &.social-media i {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.copyright {
+    background-color: rgba(33,37,41, 0.9);
+}
+
+a {
+    color: white;
+    &:link, &:visited, &:hover, &:active {
+        text-decoration: none;
+    }
+}

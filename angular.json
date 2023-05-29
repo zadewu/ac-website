@@ -30,7 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/app/components/home/home.component.scss",
+              "src/app/components/banner/banner.component.scss",
+              "src/app/components/footer/footer.component.scss",
+              "src/app/components/contact/contact.component.scss",
+              "src/app/components/about/about.component.scss"
             ],
             "scripts": []
           },
