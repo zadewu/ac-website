@@ -5,6 +5,7 @@ import { AboutComponent } from './components/about/about.component';
 import { CategoryComponent } from './components/category/category.component';
 import { OverviewComponent } from './components/overview/overview.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { AuthModalComponent } from './components/auth-modal/auth-modal.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'contact',
         component: ContactComponent
+      },
+      {
+        path: 'auth',
+        component: AuthModalComponent
       }
     ]
   },

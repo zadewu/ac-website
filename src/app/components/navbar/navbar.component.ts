@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ConfigurationService } from 'src/app/services/configuration/configuration.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,10 +9,12 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit{
   public activeItem = '';
-  public constructor(private router: Router) {}
+  public visitorCounter = 0;
+  public constructor(private router: Router, private configService: ConfigurationService) {}
 
   public ngOnInit(): void {
     this.activeItem = 'top-sellings';
+    this.visitorCounter = this.configService.getVisitors();
   }
 
   public selectNavItem(item: string): void {
@@ -19,5 +22,9 @@ export class NavbarComponent implements OnInit{
       return;
     }
     this.activeItem = item;
+  }
+
+  public onLogin(): void {
+    
   }
 }

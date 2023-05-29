@@ -1,0 +1,59 @@
+<div class="row auth">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" [class.active]="!isRegisterMode" (click)="toggleMode(false)">Sign In</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [class.active]="isRegisterMode" (click)="toggleMode(true)">Register</a>
+    </li>
+  </ul>
+  <form>
+    <div *ngIf="!isRegisterMode" class="col-6 pb-5">
+      <div class="col my-4 text-center">
+        <h4>Sign in</h4>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Username</span>
+        <input type="text" id="loginUsername" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Password</span>
+        <input type="password" id="loginPassword " class="form-control">
+      </div>
+      <div class="input-group btn-group mt-3">
+        <button type="reset" class="btn btn-outline-primary">Reset</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="separator"></div>
+      <div class="d-grid col">
+        <button class="btn btn-outline-primary" type="button">
+          <i class="bi bi-google"></i> Login with Google
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <form>
+    <div *ngIf="isRegisterMode" class="col-6 pb-5">
+      <div class="col my-4 text-center">
+        <h4>Register</h4>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Username</span>
+        <input type="text" id="regUsername" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Password</span>
+        <input type="password" id="regPassword " class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Email</span>
+        <input type="text" id="regEmail " class="form-control">
+    </div>
+      <div class="input-group btn-group mt-3">
+        <button type="reset" class="btn btn-outline-primary ">Reset</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

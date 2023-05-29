@@ -31,13 +31,17 @@
             ],
             "styles": [
               "src/styles.scss",
+              "src/app/components/navbar/navbar.component.scss",
               "src/app/components/home/home.component.scss",
               "src/app/components/banner/banner.component.scss",
               "src/app/components/footer/footer.component.scss",
               "src/app/components/contact/contact.component.scss",
-              "src/app/components/about/about.component.scss"
+              "src/app/components/about/about.component.scss",
+              "src/app/components/auth-modal/auth-modal.component.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -105,5 +109,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

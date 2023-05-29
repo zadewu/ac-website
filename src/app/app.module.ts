@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,9 @@ import { OverviewComponent } from './components/overview/overview.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ConfigurationService } from './services/configuration/configuration.service';
+import { initializeApp } from './app.loader';
+import { AuthModalComponent } from './components/auth-modal/auth-modal.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +28,21 @@ import { ContactComponent } from './components/contact/contact.component';
     ItemListComponent,
     FooterComponent,
     ContactComponent,
+    AuthModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ConfigurationService,
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializeApp,
+      deps:[ConfigurationService],
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

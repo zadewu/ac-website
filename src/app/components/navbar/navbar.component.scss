@@ -1,0 +1,25 @@
+.navbar {
+  .navbar-brand, .nav-item {
+    color: white;
+    a {
+      color: white;
+    }
+  }
+  ul {
+    &.navbar-nav {
+      .nav-item {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .counter {
+    font-size: 0.8rem;
+  }
+
+  .login {
+    cursor: pointer;
+  }
+}
