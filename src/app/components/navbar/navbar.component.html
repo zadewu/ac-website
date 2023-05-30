@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">eHome</a>
+        <a class="navbar-brand" href="/">
+            <img class="logo-image" src="assets/images/logo.png" alt="">
+        </a>
         <div class="counter">
             <span>Visitors: {{ visitorCounter }}</span>
         </div>
@@ -14,7 +16,7 @@
                     <a class="nav-link" [class.active]="activeItem === 'category'"
                     (click)="selectNavItem('category')"
                     routerLink="/category"
-                    >Category</a>
+                    >Product</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" [class.active]="activeItem === 'about'"
@@ -26,7 +28,7 @@
                     <a class="nav-link" [class.active]="activeItem === 'warranty'"
                         (click)="selectNavItem('warranty')"
                         routerLink="/warranty"
-                        >Service Warranty</a>
+                        >Service</a>
                 </li>
                 <li class="nav-item d-none d-md-block d-lg-none">
                     <a class="nav-link login" routerLink="/auth">

@@ -11,4 +11,8 @@ export class AuthModalComponent {
   public toggleMode(value: boolean): void {
     this.isRegisterMode = value;
   }
+  
+  public register(): void {
+    alert('Register successfully!');
+  }
 }
