@@ -39,7 +39,8 @@
               "src/app/components/about/about.component.scss",
               "src/app/components/auth-modal/auth-modal.component.scss",
               "src/app/components/warranty/warranty.component.scss",
-              "src/app/components/item-list/item-list.component.scss"
+              "src/app/components/item-list/item-list.component.scss",
+              "src/app/components/rating/rating.component.scss"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js"

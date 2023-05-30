@@ -13,11 +13,13 @@ import { ItemListComponent } from './components/item-list/item-list.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ConfigurationService } from './services/configuration/configuration.service';
-import { initializeApp } from './app.loader';
+import { initializeApp, initializeProducts } from './app.loader';
 import { AuthModalComponent } from './components/auth-modal/auth-modal.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { WarrantyComponent } from './components/warranty/warranty.component';
 import { RatingComponent } from './components/rating/rating.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,13 +40,21 @@ import { RatingComponent } from './components/rating/rating.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     ConfigurationService,
     {
       provide: APP_INITIALIZER,
       useFactory: initializeApp,
+      deps:[ConfigurationService],
+      multi: true
+    },
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializeProducts,
       deps:[ConfigurationService],
       multi: true
     }

@@ -1,1 +1,20 @@
-<p>category works!</p>
+<div class="row pb-5">
+    <div class="col-2">
+      <label for="brands">Brands:</label>
+      <select name="brands" id="brands" [(ngModel)]="selectedBrand"  (change)="select()">
+        <option  *ngFor="let item of brands" [value]="item">{{ item }}</option>
+      </select>
+    </div>
+    <div class="col-2">
+      <label for="price">Price:</label>
+      <select name="price" id="price">
+        <option  value="1000">&lt;$1000</option>
+        <option  value="1200">&lt;$1200</option>
+        <option  value="1800">&lt;$1800</option>
+        <option  value="2000">&lt;$2000</option>
+      </select>
+    </div>
+  </div>
+<div class="row">
+  <app-item-list [products]="products"></app-item-list>
+</div>

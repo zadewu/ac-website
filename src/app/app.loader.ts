@@ -6,3 +6,9 @@ export function initializeApp(configService: ConfigurationService) {
     return configService.loadInitialData();
   };
 }
+
+export function initializeProducts(configService: ConfigurationService) {
+  return (): Promise<any> => {
+    return configService.loadInitialProducts();
+  }
+}

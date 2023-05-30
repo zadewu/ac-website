@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "brand": "Gree",
+    "name": "elit do nisi esse in",
+    "price": "$827.65",
+    "rating": 3.5,
+    "picture": "assets/images/ac/ac4.jpg"
+  },
+  {
+    "id": 2,
+    "brand": "Panasonic",
+    "name": "exercitation reprehenderit aliqua consequat irure",
+    "price": "$1,266.53",
+    "rating": 4,
+    "picture": "assets/images/ac/ac7.jpg"
+  },
+  {
+    "id": 3,
+    "brand": "Gree",
+    "name": "anim velit duis fugiat sunt",
+    "price": "$720.95",
+    "rating": 3.5,
+    "picture": "assets/images/ac/ac1.jpg"
+  },
+  {
+    "id": 4,
+    "brand": "Panasonic",
+    "name": "duis ex mollit ullamco consequat",
+    "price": "$1,833.12",
+    "rating": 5,
+    "picture": "assets/images/ac/ac2.jpg"
+  },
+  {
+    "id": 5,
+    "brand": "Panasonic",
+    "name": "et dolore culpa aliqua consequat",
+    "price": "$1,827.85",
+    "rating": 4,
+    "picture": "assets/images/ac/ac8.jpg"
+  },
+  {
+    "id": 6,
+    "brand": "Toshiba",
+    "name": "eiusmod nostrud enim dolor ullamco",
+    "price": "$915.75",
+    "rating": 4,
+    "picture": "assets/images/ac/ac7.jpg"
+  },
+  {
+    "id": 7,
+    "brand": "Samsung",
+    "name": "aute tempor minim sunt officia",
+    "price": "$1,789.89",
+    "rating": 5,
+    "picture": "assets/images/ac/ac7.jpg"
+  },
+  {
+    "id": 8,
+    "brand": "Gree",
+    "name": "excepteur nulla dolor duis laborum",
+    "price": "$1,127.78",
+    "rating": 3,
+    "picture": "assets/images/ac/ac2.jpg"
+  },
+  {
+    "id": 9,
+    "brand": "Gree",
+    "name": "cillum exercitation ullamco do occaecat",
+    "price": "$1,072.60",
+    "rating": 4.5,
+    "picture": "assets/images/ac/ac5.jpg"
+  },
+  {
+    "id": 10,
+    "brand": "Hitachi",
+    "name": "reprehenderit nostrud occaecat ut quis",
+    "price": "$1,748.30",
+    "rating": 3.5,
+    "picture": "assets/images/ac/ac5.jpg"
+  },
+  {
+    "id": 11,
+    "brand": "LG",
+    "name": "elit velit nisi cillum cillum",
+    "price": "$1,182.98",
+    "rating": 4,
+    "picture": "assets/images/ac/ac4.jpg"
+  },
+  {
+    "id": 12,
+    "brand": "Samsung",
+    "name": "nulla culpa est dolor commodo",
+    "price": "$1,737.31",
+    "rating": 4.5,
+    "picture": "assets/images/ac/ac3.jpg"
+  },
+  {
+    "id": 13,
+    "brand": "Toshiba",
+    "name": "fugiat elit amet reprehenderit id",
+    "price": "$723.92",
+    "rating": 5,
+    "picture": "assets/images/ac/ac8.jpg"
+  },
+  {
+    "id": 14,
+    "brand": "Toshiba",
+    "name": "sunt laborum sint pariatur consectetur",
+    "price": "$1,984.99",
+    "rating": 5,
+    "picture": "assets/images/ac/ac1.jpg"
+  },
+  {
+    "id": 15,
+    "brand": "LG",
+    "name": "esse duis proident est et",
+    "price": "$1,458.16",
+    "rating": 4.5,
+    "picture": "assets/images/ac/ac6.jpg"
+  },
+  {
+    "id": 16,
+    "brand": "Hitachi",
+    "name": "fugiat sint reprehenderit Lorem enim",
+    "price": "$1,931.82",
+    "rating": 3.5,
+    "picture": "assets/images/ac/ac8.jpg"
+  },
+  {
+    "id": 17,
+    "brand": "Panasonic",
+    "name": "anim labore et consequat officia",
+    "price": "$1,335.77",
+    "rating": 4.5,
+    "picture": "assets/images/ac/ac6.jpg"
+  },
+  {
+    "id": 18,
+    "brand": "Hitachi",
+    "name": "enim eiusmod qui aute est",
+    "price": "$1,838.90",
+    "rating": 3,
+    "picture": "assets/images/ac/ac7.jpg"
+  },
+  {
+    "id": 19,
+    "brand": "LG",
+    "name": "enim et velit fugiat cupidatat",
+    "price": "$1,061.01",
+    "rating": 4.5,
+    "picture": "assets/images/ac/ac3.jpg"
+  },
+  {
+    "id": 20,
+    "brand": "Samsung",
+    "name": "id est aute ullamco quis",
+    "price": "$1,057.41",
+    "rating": 3.5,
+    "picture": "assets/images/ac/ac2.jpg"
+  },
+  {
+    "id": 21,
+    "brand": "Panasonic",
+    "name": "do Lorem et in ipsum",
+    "price": "$1,967.10",
+    "rating": 4,
+    "picture": "assets/images/ac/ac6.jpg"
+  },
+  {
+    "id": 22,
+    "brand": "LG",
+    "name": "adipisicing ex sunt proident occaecat",
+    "price": "$1,972.30",
+    "rating": 5,
+    "picture": "assets/images/ac/ac1.jpg"
+  },
+  {
+    "id": 23,
+    "brand": "Hitachi",
+    "name": "eu consequat occaecat non pariatur",
+    "price": "$1,161.02",
+    "rating": 3,
+    "picture": "assets/images/ac/ac3.jpg"
+  },
+  {
+    "id": 24,
+    "brand": "Gree",
+    "name": "exercitation nostrud aute eu sit",
+    "price": "$784.01",
+    "rating": 4,
+    "picture": "assets/images/ac/ac1.jpg"
+  },
+  {
+    "id": 25,
+    "brand": "Panasonic",
+    "name": "proident consequat excepteur pariatur mollit",
+    "price": "$846.05",
+    "rating": 4,
+    "picture": "assets/images/ac/ac8.jpg"
+  },
+  {
+    "id": 26,
+    "brand": "Toshiba",
+    "name": "et in proident amet cillum",
+    "price": "$1,476.26",
+    "rating": 3.5,
+    "picture": "assets/images/ac/ac2.jpg"
+  },
+  {
+    "id": 27,
+    "brand": "Panasonic",
+    "name": "ullamco aliqua sint anim proident",
+    "price": "$1,759.46",
+    "rating": 5,
+    "picture": "assets/images/ac/ac6.jpg"
+  },
+  {
+    "id": 28,
+    "brand": "Gree",
+    "name": "in nisi do ex commodo",
+    "price": "$1,563.14",
+    "rating": 4,
+    "picture": "assets/images/ac/ac7.jpg"
+  }
+]

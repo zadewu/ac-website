@@ -1,5 +1,32 @@
-<div>
+<div *ngIf="!clickable">
     <ng-container *ngFor="let icon of getIcons()">
         <i [class]="'bi ' + icon"></i>
     </ng-container>
+</div>
+<div *ngIf="clickable" class="rating clickable">
+    <i class="bi text-warning"
+        [class.bi-star]="clickRating < 1"
+        [class.bi-star-filled]="clickRating >= 1"
+        (click)="setRating(1)"
+    ></i>
+    <i class="bi text-warning"
+        [class.bi-star]="clickRating < 2"
+        [class.bi-star-filled]="clickRating >= 2"
+        (click)="setRating(1)"
+    ></i>
+    <i class="bi text-warning"
+        [class.bi-star]="clickRating < 3"
+        [class.bi-star-filled]="clickRating >= 3"
+        (click)="setRating(1)"
+    ></i>
+    <i class="bi text-warning"
+        [class.bi-star]="clickRating < 4"
+        [class.bi-star-filled]="clickRating >= 4"
+        (click)="setRating(1)"
+    ></i>
+    <i class="bi text-warning"
+        [class.bi-star]="clickRating < 5"
+        [class.bi-star-filled]="clickRating === 5"
+        (click)="setRating(1)"
+    ></i>
 </div>
