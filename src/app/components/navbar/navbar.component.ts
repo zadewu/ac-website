@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit{
   public constructor(private router: Router, private configService: ConfigurationService) {}
 
   public ngOnInit(): void {
-    this.activeItem = 'top-sellings';
+    this.activeItem = '';
     this.visitorCounter = this.configService.getVisitors();
   }
 

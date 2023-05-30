@@ -6,6 +6,8 @@ import { CategoryComponent } from './components/category/category.component';
 import { OverviewComponent } from './components/overview/overview.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AuthModalComponent } from './components/auth-modal/auth-modal.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { WarrantyComponent } from './components/warranty/warranty.component';
 
 const routes: Routes = [
   {
@@ -15,6 +17,10 @@ const routes: Routes = [
       {
         path: '',
         component: OverviewComponent,
+      },
+      {
+        path: 'warranty',
+        component: WarrantyComponent,
       },
       {
         path: 'about',
@@ -31,6 +37,10 @@ const routes: Routes = [
       {
         path: 'auth',
         component: AuthModalComponent
+      },
+      {
+        path: 'faq',
+        component: FaqComponent
       }
     ]
   },

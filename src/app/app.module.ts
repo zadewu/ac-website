@@ -15,6 +15,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ConfigurationService } from './services/configuration/configuration.service';
 import { initializeApp } from './app.loader';
 import { AuthModalComponent } from './components/auth-modal/auth-modal.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { WarrantyComponent } from './components/warranty/warranty.component';
+import { RatingComponent } from './components/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { AuthModalComponent } from './components/auth-modal/auth-modal.component
     FooterComponent,
     ContactComponent,
     AuthModalComponent,
+    FaqComponent,
+    WarrantyComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,
