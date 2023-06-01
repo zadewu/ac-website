@@ -20,6 +20,9 @@ import { WarrantyComponent } from './components/warranty/warranty.component';
 import { RatingComponent } from './components/rating/rating.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { ReviewListComponent } from './components/review-list/review-list.component';
+import { SimilarProductComponent } from './components/similar-product/similar-product.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import { FormsModule } from '@angular/forms';
     FaqComponent,
     WarrantyComponent,
     RatingComponent,
+    ProductDetailComponent,
+    ReviewListComponent,
+    SimilarProductComponent,
   ],
   imports: [
     BrowserModule,

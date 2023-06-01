@@ -8,6 +8,8 @@ import { Component, Input } from '@angular/core';
 export class RatingComponent {
   @Input() public rating = 0.0;
   @Input() public clickable = false;
+  @Input() public totalReviews: number | undefined;
+  
   public clickRating = 0;
   
   public getIcons(): string[] {

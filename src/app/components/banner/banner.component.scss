@@ -1,15 +1,13 @@
-.banner {
-    position: relative;
-    background-image: url('../../../assets/images/bestac.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 350px;
-    color: #ffffff;
-    padding: 20px;
-}
 .logo {
+    background-color: #A3ADFF;
     img {
         height: 120px;
         width: 160px;
+    }
+}
+
+.carousel-item {
+    img {
+        height: 500px;
     }
 }

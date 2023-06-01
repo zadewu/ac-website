@@ -30,4 +30,7 @@ a {
     &:link, &:visited, &:hover, &:active {
         text-decoration: none;
     }
+    &:hover {
+        color: #A3ADFF
+    }
 }

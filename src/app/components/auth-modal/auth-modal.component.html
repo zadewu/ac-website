@@ -22,7 +22,7 @@
       </div>
       <div class="input-group btn-group mt-3">
         <button type="reset" class="btn btn-outline-primary">Reset</button>
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" (click)="login()">Submit</button>
       </div>
       <div class="separator"></div>
       <div class="d-grid col">
@@ -48,11 +48,11 @@
       </div>
       <div class="input-group mb-3">
         <span class="input-group-text">Email</span>
-        <input type="text" id="regEmail " class="form-control">
+        <input type="email" id="regEmail " class="form-control">
     </div>
       <div class="input-group btn-group mt-3">
         <button type="reset" class="btn btn-outline-primary ">Reset</button>
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary" (click)="register()">Submit</button>
       </div>
     </div>
   </form>

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-
+  public submit(): void {
+    alert('We will contact you in the next 5 days');
+  }
 }

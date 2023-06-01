@@ -2,6 +2,7 @@
     <ng-container *ngFor="let icon of getIcons()">
         <i [class]="'bi ' + icon"></i>
     </ng-container>
+    <ng-container *ngIf="totalReviews">({{totalReviews}})</ng-container>
 </div>
 <div *ngIf="clickable" class="rating clickable">
     <i class="bi text-warning"

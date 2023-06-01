@@ -8,6 +8,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AuthModalComponent } from './components/auth-modal/auth-modal.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { WarrantyComponent } from './components/warranty/warranty.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 const routes: Routes = [
   {
@@ -41,9 +42,13 @@ const routes: Routes = [
       {
         path: 'faq',
         component: FaqComponent
+      },
+      {
+        path: 'product/:id',
+        component: ProductDetailComponent
       }
     ]
-  },
+  }
 ];
 
 @NgModule({

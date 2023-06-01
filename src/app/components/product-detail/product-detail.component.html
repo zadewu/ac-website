@@ -1,0 +1,121 @@
+<div class="row">
+  <div class="col-12">
+    <h3>{{ selectedProduct?.name }}</h3>
+    <app-rating [rating]="selectedProduct?.rating || 5" [totalReviews]="121"></app-rating>
+  </div>
+</div>
+<div class="product-detail-preview row">
+  <div class="image-wrapper col-7">
+    <div class="row">
+      <div class="image-wrapper__small col-12 d-flex justify-content-center">
+        <img [src]="selectedImageUrl" class="image-fluid image__main">
+      </div>
+      <div class="col-12">
+        <div class="row pb-2">
+          <div class="col-4" *ngFor="let img of previewImages; let i = index">
+            <img [src]="img.url" class="image__thumb" [class.active]="isSelectedImage(img.name)"
+              (click)="onSelectImage(i)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-5 ps-5">
+    <div class="row pb-3">
+      <div class="col-4 d-flex flex-column">
+        <h5>Choose color:</h5>
+        <div class="color-pallete d-flex flex-row pt-2">
+          <div class="color white mx-2" [class.active]="selectedColor === 'white'" (click)="selectColor('white')"></div>
+          <div class="color grey mx-2" [class.active]="selectedColor === 'grey'" (click)="selectColor('grey')"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-12 c-wrapper d-flex flex-column">
+        <h5>Characteristic:</h5>
+        <div class="row d-flex">
+          <div class="col-6 d-flex flex-row c-item flex-grow-1">
+            <i class="bi bi-aspect-ratio"></i>
+            <div class="c-item-des d-flex flex-column">
+              <h5>Size</h5>
+              <p>152 x 56</p>
+            </div>
+          </div>
+          <div class="col-6 d-flex flex-row c-item flex-grow-1">
+            <i class="bi bi-battery-charging"></i>
+            <div class="c-item-des d-flex flex-column">
+              <h5>Power consume</h5>
+              <p>900 Watt</p>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-6 d-flex flex-row c-item flex-grow-1">
+            <i class="bi bi-lightning-charge"></i>
+            <div class="c-item-des d-flex flex-column">
+              <h5>Energy Saving</h5>
+              <p>5 Star</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-4">
+        <h3>$150.3</h3>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-primary add-to-cart" type="button">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row pt-5">
+  <ul class="product-detail d-flex justify-content-center">
+    <li (click)="onSelectProductDetail('spec')" [class.active]="selectedProductDetail === 'spec'">
+      <h4>Specification</h4>
+    </li>
+    <li (click)="onSelectProductDetail('ins')" [class.active]="selectedProductDetail === 'ins'">
+      <h4>Installation</h4>
+    </li>
+    <li (click)="onSelectProductDetail('review')" [class.active]="selectedProductDetail === 'review'">
+      <h4>Reviews</h4>
+    </li>
+  </ul>
+</div>
+<div class="product-detail-content row pt-5 mb-5">
+  <div class="col-12 pb-5">
+    <ng-container *ngIf="selectedProductDetail === 'spec'">
+      <h5>Overview</h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Phasellus egestas tellus rutrum tellus. Vel quam elementum pulvinar etiam non quam lacus
+        suspendisse. Interdum velit laoreet id donec ultrices tincidunt. Etiam erat velit scelerisque in dictum. Odio
+        euismod lacinia at quis. Faucibus turpis in eu mi bibendum neque egestas. Id diam maecenas ultricies mi eget
+        mauris pharetra. Amet consectetur adipiscing elit pellentesque. Augue interdum velit euismod in pellentesque massa
+        placerat duis. Feugiat vivamus at augue eget. Consequat nisl vel pretium lectus quam. Proin fermentum leo vel orci
+        porta. Bibendum ut tristique et egestas quis ipsum suspendisse. Eget felis eget nunc lobortis mattis aliquam.
+        Tristique senectus et netus et malesuada fames.
+      </p>
+      <h5>Instruction</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Elit ut aliquam purus sit amet luctus. Purus non enim praesent elementum. Lobortis elementum nibh
+        tellus molestie nunc non. Dui nunc mattis enim ut tellus. Nibh nisl condimentum id venenatis a condimentum.
+        Molestie nunc non blandit massa enim. Vel orci porta non pulvinar neque laoreet suspendisse interdum. Elit
+        pellentesque habitant morbi tristique senectus et. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus
+        sed. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet.</p>
+    </ng-container>
+    <ng-container *ngIf="selectedProductDetail === 'review'">
+      <div class="row pb-3">
+        <div class="col-12">
+          <h4>Reviews of product</h4>
+          <app-rating [rating]="selectedProduct?.rating || 5" [totalReviews]="121"></app-rating>
+        </div>
+      </div>
+      <app-review-list></app-review-list>
+    </ng-container>
+  </div>
+</div>
+<div class="row mb-5">
+  <app-similar-product></app-similar-product>
+</div>

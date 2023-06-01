@@ -6,7 +6,7 @@ import { Product } from 'src/app/models/product';
   providedIn: 'root'
 })
 export class ConfigurationService {
-  private readonly CONFIG_FILE_URL = 'assets/data.json';
+  private readonly CONFIG_FILE_URL = 'assets/temp.json';
   private products: Product[] = [];
   public constructor(private http: HttpClient) { }
 
@@ -36,6 +36,10 @@ export class ConfigurationService {
 
   public getProducts(): Product[] {
     return this.products;
+  }
+
+  public findProductBy(id: number): Product | undefined{
+    return this.products.find(product => product.id == id);
   }
 
   public getVisitors(): number {

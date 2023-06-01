@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/models/product';
 
 @Component({
@@ -9,5 +10,9 @@ import { Product } from 'src/app/models/product';
 export class ItemListComponent {
   @Input() public products: Product[] = [];
 
-  
+  public constructor(private router: Router){}
+
+  public chooseProduct(id: number) {
+    this.router.navigate([`/product/${id}`])
+  }
 }

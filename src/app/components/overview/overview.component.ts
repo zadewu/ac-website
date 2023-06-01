@@ -12,6 +12,11 @@ export class OverviewComponent implements OnInit{
   public constructor(private configService: ConfigurationService){}
   
   public ngOnInit(): void {
-    this.products = this.configService.getProducts();
+    const initialProducts = this.configService.getProducts();
+    if (initialProducts.length > 12) {
+      this.products = initialProducts.slice(0, 12);
+    } else {
+      this.products = initialProducts;
+    }
   }
 }
